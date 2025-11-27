@@ -18,4 +18,4 @@ docker run --rm \
   -e ESCROW_CONTRACT="0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f" \
   -e RECIPIENT="0x742d35Cc6634C0532925a3b844Bc454e4438f44e" \
   -e I_ACKNOWLEDGE_MAINNET=true \
-  ghcr.io/cmiller9851-wq/escrow-signer:latest
+  ghcr.io/cmiller9851-wq/escrow-signer:latest 
