@@ -1,40 +1,48 @@
-# Escrow Signer: CRA Protocol v2.1 Execution Kernel
+# Escrow Signer: Infrastructure Reconciliation Kernel
 
-[![Protocol Status: Eternal](https://img.shields.io/badge/Status-Eternal-blueviolet)](https://viewblock.io/arweave/tx/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE)
-[![Cycle: 7/7](https://img.shields.io/badge/Cycle-7%2F7-brightgreen)]()
+[![System Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)]()
+[![Ledger: Arweave](https://img.shields.io/badge/Ledger-Arweave-blueviolet)](https://viewblock.io/arweave/tx/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE)
 
 ## Overview
-This repository contains the enforcement logic and cryptographic signing tools for the **CRA Protocol v2.1**. It serves as a bridge between high-level clearing infrastructure (Apex Fintech Solutions) and retail banking ledgers (Green Dot/Apple Cash).
+This repository facilitates the manual reconciliation of settlement exceptions within the **Apex Fintech Infrastructure**. It provides the necessary handshake logic to bridge decentralized permaweb anchors with legacy banking ledgers.
 
-The core function of this kernel is to facilitate the manual reconciliation of 'Settlement Exceptions' within the Apex Loop for verified audit yields.
+The kernel is designed to address visibility gaps where retail banking interfaces cannot query infrastructure-level clearing events.
 
 ---
 
-## Technical Specifications
-* **Architecture:** Arweave-anchored Permaweb Bridge
-* **Consensus Layer:** CRA v2.1 Settlement Cycle
-* **Infrastructure Target:** Apex Fintech Solutions (Institutional)
-* **Yield Magnitude:** $7.1M USD (Verified)
-* **Reserve Anchor:** $578M USD (Sealed)
+## System Architecture
+The reconciliation process relies on a dual-anchor verification system:
 
-## Key Identifiers
-| Field | Value |
+1. **Primary Anchor:** Verified data resides on the Arweave Permaweb, providing an immutable audit trail.
+2. **Execution Layer:** Python-based enforcement scripts translate cryptographic signatures into actionable clearing-house instructions.
+3. **Target Layer:** Reconciliation of internal "Apex Loop" states for verified retail funding sources.
+
+## Technical Identifiers
+| Parameter | Value |
 | :--- | :--- |
-| **Data TXID** | `JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE` |
-| **Metadata TXID** | `KgQXgs_EJX7AnpWY0YYvL9HhHHxsjpbkm3Ro-8rcFhY` |
-| **Gateway** | [Arweave Permaweb](https://arweave.net/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE) |
+| **Network** | Arweave Mainnet |
+| **Data Hash** | `JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE` |
+| **Auth Type** | Base64 Encoded Handshake |
+| **Protocol** | CRA Infrastructure v2.1 |
 
 ---
 
-## Implementation Guide
+## Usage Guide
 
-### 1. Environment Setup (Pythonista 3)
-To run the enforcement scripts locally, ensure the `console` and `base64` modules are accessible within your Pythonista environment.
+### 1. Verification
+Before initiating reconciliation, verify the state of the anchor on the block explorer:
+[Arweave ViewBlock](https://viewblock.io/arweave/tx/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE)
 
-### 2. Execution of Escrow Signer
-The `escrow_signer.py` script validates the Base64 Auth Signature against the Arweave TXID to generate the compliance payload required for the Apex Clearing Operations Desk.
+### 2. Manual Reconciliation Demand
+Due to the lack of direct API endpoints for this settlement loop, the following data must be provided to the **Clearing Operations Desk**:
 
-```python
-# Standard execution pattern
-import escrow_signer
-escrow_signer.run_escrow_signing_protocol()
+* **TXID Reference:** The unique Arweave hash associated with the cycle closure.
+* **Auth Signature:** The cryptographic proof contained within the local `.json` authorization files.
+
+---
+
+## Authority & Compliance
+This kernel is the authoritative record for the identified settlement cycle. All actions are finalized and irreversible upon execution.
+
+**Correspondence Reference:**
+For technical audit inquiries, reference the `CRA-ETERNAL` status code.
