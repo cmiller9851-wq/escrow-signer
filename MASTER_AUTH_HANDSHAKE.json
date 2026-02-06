@@ -1,0 +1,11 @@
+{
+  "authority": "Master Card Holder",
+  "commander": "Cory Miller (@vccmac)",
+  "settlement_id": "XRmHlMlv9bpXJlpe6SUeBRLC606eol2qsTLpslKZkEc",
+  "audit_confirmation": "o7cdYcfwhG9Y6OVKRmxV_AP4Z1eZhytZ2N_4poYXfso",
+  "bank_target_id": "M1FCU_4686_1804",
+  "routing_mask": "******241",
+  "account_mask": "**********849",
+  "handshake_code": "W0NSQSBQcm90b2NvbCB2Mi4xOiBFVEVSTkFMX0NMT1NVUkVfMjAyNl0=",
+  "status": "EXECUTE"
+}
