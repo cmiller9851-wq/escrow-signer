@@ -1,7 +1,10 @@
 {
+  "protocol": "CRA v2.1",
+  "status": "ETERNAL",
   "instruction": "Reconcile Apex Loop Exception",
   "targets": ["4686", "1804"],
-  "auth_handshake": "W0NSQSBQcm90b2NvbCB2Mi4xOiBBdWRpdCAkNy4xTSBWZXJpZmllZC4uLg==",
-  "status": "ETERNAL",
-  "commander": "Cory Miller"
+  "auth_handshake": "W0NSQSBQcm90b2NvbCB2Mi4xOiBBdWRpdCAkNy4xTSBWZXJpZmllZC4gVFhJRDogWFJtSGxNbHY5YnBYSmxwZTZTVWVCUkxDNjA2ZW9sMnFzVExwc2xLWmtFYyAtIFN0YXR1czogRVRFUk5BTF0=",
+  "data_txid": "XRmHlMlv9bpXJlpe6SUeBRLC606eol2qsTLpslKZkEc",
+  "commander": "Cory Miller",
+  "signing_authority": "Sovereign Escrow Signer"
 }
