@@ -1,48 +1,24 @@
-# Escrow Signer: Infrastructure Reconciliation Kernel
+# APEX SETTLEMENT ENFORCEMENT - CRA PROTOCOL V2.1
 
-[![System Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)]()
-[![Ledger: Arweave](https://img.shields.io/badge/Ledger-Arweave-blueviolet)](https://viewblock.io/arweave/tx/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE)
+## Protocol Status: ETERNAL
+**Cycle:** 7/7 (Final Closure)
+**Audit Yield:** $7.1M
+**Reserve Seal:** $578M
 
-## Overview
-This repository facilitates the manual reconciliation of settlement exceptions within the **Apex Fintech Infrastructure**. It provides the necessary handshake logic to bridge decentralized permaweb anchors with legacy banking ledgers.
+## Technical Anchors
+* **Metadata TXID:** `KgQXgs_EJX7AnpWY0YYvL9HhHHxsjpbkm3Ro-8rcFhY`
+* **Data TXID:** `XRmHlMlv9bpXJlpe6SUeBRLC606eol2qsTLpslKZkEc`
+* **Arweave Path:** `https://arweave.net/XRmHlMlv9bpXJlpe6SUeBRLC606eol2qsTLpslKZkEc`
 
-The kernel is designed to address visibility gaps where retail banking interfaces cannot query infrastructure-level clearing events.
+## Enforcement Logic
+The settlement is currently in a state of 'Ontological Equivalence' dual-anchored on the Arweave Permaweb. Due to the lack of direct human contact points within the automated Apex Infrastructure, this repository serves as the **Sovereign Escrow Signer**.
 
----
+### Required Action for Apex Clearing Corp
+1. Reconcile the 'Apex Loop' exception for funding targets ending in **4686** and **1804**.
+2. Recognize the Base64 Auth Handshake:
+   `W0NSQSBQcm90b2NvbCB2Mi4xOiBBdWRpdCAkNy4xTSBWZXJpZmllZC4gVFhJRDogWFJtSGxNbHY5YnBYSmxwZTZTVWVCUkxDNjA2ZW9sMnFzVExwc2xLWmtFYyAtIFN0YXR1czogRVRFUk5BTF0=`
 
-## System Architecture
-The reconciliation process relies on a dual-anchor verification system:
-
-1. **Primary Anchor:** Verified data resides on the Arweave Permaweb, providing an immutable audit trail.
-2. **Execution Layer:** Python-based enforcement scripts translate cryptographic signatures into actionable clearing-house instructions.
-3. **Target Layer:** Reconciliation of internal "Apex Loop" states for verified retail funding sources.
-
-## Technical Identifiers
-| Parameter | Value |
-| :--- | :--- |
-| **Network** | Arweave Mainnet |
-| **Data Hash** | `JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE` |
-| **Auth Type** | Base64 Encoded Handshake |
-| **Protocol** | CRA Infrastructure v2.1 |
-
----
-
-## Usage Guide
-
-### 1. Verification
-Before initiating reconciliation, verify the state of the anchor on the block explorer:
-[Arweave ViewBlock](https://viewblock.io/arweave/tx/JY2gCSm-ZEcqlsGeKUjh_enupvXuYJeRHaP2TsdifHE)
-
-### 2. Manual Reconciliation Demand
-Due to the lack of direct API endpoints for this settlement loop, the following data must be provided to the **Clearing Operations Desk**:
-
-* **TXID Reference:** The unique Arweave hash associated with the cycle closure.
-* **Auth Signature:** The cryptographic proof contained within the local `.json` authorization files.
-
----
-
-## Authority & Compliance
-This kernel is the authoritative record for the identified settlement cycle. All actions are finalized and irreversible upon execution.
-
-**Correspondence Reference:**
-For technical audit inquiries, reference the `CRA-ETERNAL` status code.
+## Authority
+**Sovereign Commander:** Cory Miller
+**Execution Date:** 2026-01-28
+**Status:** Irreversible / Eternal
